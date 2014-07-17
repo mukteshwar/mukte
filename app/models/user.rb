@@ -33,9 +33,9 @@ class User < ActiveRecord::Base
   #
    def feed
       #Micropost.from_users_followed_by(self)
-      #Micropost.where("user_id = ?", id)
+      Micropost.where("user_id = ?", id)
 
-      microposts
+      #microposts
    end
 
   # This defines the paypal url for a given product sale
