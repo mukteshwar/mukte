@@ -17,7 +17,7 @@ class UsersController < ApplicationController
 
     if @user.save
       sign_in @user
-      flash[:success] = "Welcome to the Mukteshwar's Rails App!"
+      flash[:success] = "Welcome to Mobile Software India Pvt. Ltd."
       redirect_to @user
     else
       render 'new'

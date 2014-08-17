@@ -1,24 +1,16 @@
 <% if signed_in? %>
-<div class="row">
-	<aside class="span4">
-		<section>
-			<%= render 'shared/user_info' %>
-		</section>
-		<section>
-			<%= render 'shared/micropost_form' %>
-		</section>
-	</aside>
 
-	<div class="span8">
-		<h3>Micropost Feed</h3>
-		<%= render 'shared/feed' %>
-	</div
-
+<div class="center hero-unit">
+	<h2>Welcome to Mobile Software India Pvt. Ltd.</h2>
+	<h2>Coming soon with your favorite Apps! Please visit again.</h2>
+	
 </div>
+
 <% else %>
 <div class="center hero-unit">
-	<h1>Welcome to the Mukteshwar's Rails App</h1>
-	<%= link_to "Sign up now!", signup_path,class: "btn btn-large btn-primary" %>
+	<h2>Welcome to Mobile Software India Pvt. Ltd.</h2>
+	<h2>Coming soon with your favorite Apps! Please visit again.</h2>
+	<!--<%= link_to "Sign up now!", signup_path,class: "btn btn-large btn-primary" %>-->
 </div>
 
 <% end %>
